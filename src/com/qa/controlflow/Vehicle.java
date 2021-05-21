@@ -2,10 +2,18 @@ package com.qa.controlflow;
 
 public class Vehicle 
 {	
-	private int year; 
-	private String model; 
-	private String make;
+	protected int year; 
+	protected String model; 
+	protected String make;
 	
+	
+		Vehicle(int year , String model , String make )
+		{
+			this.make=make;
+			this.model=model;
+			this.year=year;
+			
+		}
 		public int getYear() 
 		{
 		return year;
@@ -29,6 +37,11 @@ public class Vehicle
 		{
 		this.make = make;
 		} 
-	
+		public static void main(String[] args) 
+		{
+			Vehicle one = new Vehicle(2010 , "GTR " , "nissian");
+			
+			
+		}
 	
 }

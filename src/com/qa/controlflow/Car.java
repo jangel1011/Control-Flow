@@ -1,7 +1,12 @@
 package com.qa.controlflow;
 
-public class Car 
+public class Car extends Vehicle
 { 
+	Car(int year, String model, String make , String color , boolean supercar, boolean sedan ) 
+	{
+		super(year, model, make);
+		
+	}
 	private boolean superCar; 
 	private String color;
 	private boolean sedan;
@@ -30,9 +35,6 @@ public class Car
 	{
 		this.sedan = sedan;
 	}
-	car()
-	{
-		
-	}
 	
-}
+}	
+		
